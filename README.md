@@ -12,7 +12,7 @@ The base URL for all API requests is:
 
 ## Endpoints
 
-### `GET /wastecategory`
+### `GET /api/wastecategory`
 
 Returns a list of all the waste categories
 
@@ -31,7 +31,7 @@ Returns an Array of JSON Objects of waste Category, each with the following prop
 Request:
 
 ```
-GET /wastecategory
+GET /api/wastecategory
 ```
 
 Response:
@@ -62,7 +62,7 @@ Response:
 ]
 ```
 
-### `GET /wastecategory/{id}`
+### `GET /api/wastecategory/{id}`
 
 Returns a waste category with an id that matches the one specified
 
@@ -81,7 +81,7 @@ Returns a JSON object with the following properties:
 Request:
 
 ```
-GET /wastecategory/3
+GET /api/wastecategory/3
 ```
 
 Response:
@@ -96,7 +96,7 @@ Response:
    }
 ```
 
-### `POST /wastecategory`
+### `POST /api/wastecategory`
 
 Returns `status code 201` when an object has been created successfully along with the data
 
@@ -124,7 +124,7 @@ Returns a JSON object with the following properties and a `status code 201`:
 Request:
 
 ```
-POST /wastecategory/3
+POST /api/wastecategory/3
 
 {
   "name":"Bio Waste",
